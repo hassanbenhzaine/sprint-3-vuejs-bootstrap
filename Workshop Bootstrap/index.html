@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Workshop Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Jonny Actions</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Kittens</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Guns</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Makeup tips</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">PC Game cheats</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid">
+    <div class="row">
+    <div class="col" style="margin-left: 20px;">
+    <h1>Create account or  <a class="rm"  href="#Mymodal" data-toggle="modal" data-target="#myModal">Read More</a></h1>
+   <div class="d-flex cnt">
+     <div class="me-5 cnt2">
+    <h4>First Name</h4>
+    <input type="text" value="First Name" class="form-control"> </div>
+    <div class="cnt2">
+    <h4>Last Name</h4>
+    <input type="text" value="Last Name" class="form-control"></div>
+  </div>
+    <h4>Email adresse</h4>
+    <input  type="email" value="Email" class="form-control">
+    <h4>Password</h4>
+    <input type="password" value="password" class="form-control">
+    </div>
+    <img class="col" src="./images/4-1(1).png" style="margin-right: 20px;" alt="">
+    </div> 
+    <h4 class="ms-3 fv">Favorite ?</h4>
+    <div class="ms-3 form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+        <label class="form-check-label" for="inlineCheckbox1">Kittens</label>
+      </div>
+      
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
+        <label class="form-check-label" for="inlineCheckbox2">Charlie</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          id="inlineCheckbox3"
+          value="option3"
+        />
+        <label class="form-check-label" for="inlineCheckbox3">Jonny Action</label>
+      </div>
+      <div class="div">
+      <button class=" m-3 btn btn-primary btn-md p-4" > Go </button></div>
+        <div class="row">
+          <img  class="col"src="./images/300 (1)"     style="width: 150px; height:150px;" alt="" data-toggle="tooltip" data-placement="bottom" title="Daniel Beauchamp">
+          <img class="col"src="./images/200"    style="width: 150px; height:150px;" alt="" data-toggle="tooltip" data-placement="bottom" title="Daniel Beauchamp">     
+          <img  class="col" src= "./images/300 (2)"     style="width: 150px; height:150px;" alt="" data-toggle="tooltip" data-placement="bottom" title="Daniel Beauchamp">
+          <img class="col" src="./images/300"     style="width: 150px; height:150px;" alt="" data-toggle="tooltip" data-placement="bottom" title="Daniel Beauchamp">
+        </div>
+    </div>  
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class=" modal-dialog-centered modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Read more?Seriously?</h4>
+        </div>
+        <div class="modal-body">
+         I could have killed 'em all, I could kill you. In town you're the law, out here it's me. <br>
+         Don't push it. Don't push it or I'll give you a war you won't believe. Let it go.Let it go. <br>
+         --Rambo
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <script>
+
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</body>
+</html>
